@@ -25,16 +25,12 @@
     "output": "_site",
     "template": ["default", "modern"],
     "globalMetadata": {
-      "_appFaviconPath": "images/altamkp.png",
+      "_appFaviconPath": "images/altamkp.ico",
       "_appFooter": "Copyright (c) altamkp",
-      "_appLogoPath": null,
+      "_appLogoPath": "images/altamkp.png",
       "_appName": "DotnetEx",
       "_appTitle": "DotnetEx",
       "_enableSearch": true,
-      "_gitContribute": {
-        "repo": "https://github.com/altamkp/DotnetEx",
-        "branch": "master"
-      },
       "pdf": true
     }
   }

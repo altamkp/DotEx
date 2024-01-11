@@ -425,8 +425,13 @@ $RECYCLE.BIN/
 .idea/
 *.sln.iml
 
-##
 ## Visual Studio Code
-##
 .vscode
 .vscode/
+
+## Godot
+.godot/
+
+## Docfx
+docs/_site/
+docs/api/
