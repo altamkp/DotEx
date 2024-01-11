@@ -44,19 +44,9 @@
     "title": "Namespace DotnetEx.Reflections | DotnetEx",
     "keywords": "Namespace DotnetEx.Reflections Classes AssemblyExtensions Extensions for Assembly. MemberInfoExtensions Extensions for MemberInfo. TypeExtensions Extensions for Type."
   },
-  "docs/getting-started.html": {
-    "href": "docs/getting-started.html",
-    "title": "Getting Started | DotnetEx",
-    "keywords": "Getting Started"
-  },
-  "docs/introduction.html": {
-    "href": "docs/introduction.html",
-    "title": "Introduction | DotnetEx",
-    "keywords": "Introduction"
-  },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | DotnetEx",
-    "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "DotnetEx | DotnetEx",
+    "keywords": "DotnetEx Dotnet Extras provides a set of extension methods for .Net in C#. Currently available extensions: Maths Reflections Documentation Please refer to this page for a detailed documentation on all available extensions. License Available under the MIT License. Copyright Copyright (c) 2024 altamkp"
   }
 }

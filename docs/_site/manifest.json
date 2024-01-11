@@ -115,39 +115,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/introduction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "docs/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
