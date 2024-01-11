@@ -47,6 +47,6 @@
   "index.html": {
     "href": "index.html",
     "title": "DotnetEx | DotnetEx",
-    "keywords": "DotnetEx Dotnet Extras provides a set of extension methods for .Net in C#. Currently available extensions: Maths Reflections Documentation Please refer to this page for a detailed documentation on all available extensions. License Available under the MIT License. Copyright Copyright (c) 2024 altamkp"
+    "keywords": "DotnetEx Dotnet Extras provides a set of extension methods for .Net in C#. Currently available extensions: Maths Reflections License Available under the MIT License. Copyright Copyright (c) 2024 altamkp"
   }
 }
