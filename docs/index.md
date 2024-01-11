@@ -6,10 +6,10 @@ Currently available extensions:
 - [Maths](api/DotnetEx.Maths.yml)
 - [Reflections](api/DotnetEx.Reflections.yml)
 
-## License
+##### License
 
 Available under the [MIT License](https://github.com/altamkp/DotnetEx/blob/master/LICENSE.md).
 
-## Copyright
+##### Copyright
 
 Copyright (c) 2024 [altamkp](https://github.com/altamkp)
