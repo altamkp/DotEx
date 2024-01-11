@@ -5,8 +5,8 @@ namespace DotnetEx.Maths;
 /// </summary>
 public static class ComparableExtensions {
     /// <summary>
-    /// Checks if <paramref name="value"/> is between the inclusive <paramref name="lower"/>  
-    /// and <paramref name="upper"/> limits.
+    /// Checks if <paramref name="value"/> is between the inclusive 
+    /// <paramref name="lower"/> and <paramref name="upper"/> limits.
     /// </summary>
     /// <param name="value">Value to check.</param>
     /// <param name="lower">Lower limit for reference.</param>

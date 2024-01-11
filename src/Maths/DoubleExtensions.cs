@@ -10,8 +10,7 @@ public static class DoubleExtensions {
     /// <param name="value">Value to trim.</param>
     /// <param name="precision">Precision to use.</param>
     /// <returns>Trimmed value.</returns>
-    /// <exception cref="ArgumentOutOfRangeException"><paramref name="precision"/>
-    /// is not positive and smaller than 1.</exception>
+    /// <exception cref="ArgumentOutOfRangeException"><paramref name="precision"/> is not positive and smaller than 1.</exception>
     public static double Trim(this double value, double precision = MathDef.DEFAULT_PRECISION) {
         if (precision <= 0 || precision >= 1) {
             throw new ArgumentOutOfRangeException(nameof(precision), "Precision should be positive and smaller than 1.");

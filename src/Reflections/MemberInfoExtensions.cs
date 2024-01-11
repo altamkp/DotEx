@@ -19,7 +19,7 @@ public static class MemberInfoExtensions {
 
     /// <summary>
     /// Indicates whether custom attributes of a specified type are applied to a specified
-    /// member, and, optionally, applied to its ancestors.
+    /// member, and optionally its ancestors.
     /// </summary>
     /// <typeparam name="TAttribute">The type of the attribute to search for.</typeparam>
     /// <param name="memberInfo">Member to inspect.</param>
