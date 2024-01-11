@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageId>DotnetEx</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>altamkp</Authors>
+        <Company>altamkp</Company>
+        <PackageDescription>Dotnet extension library</PackageDescription>
+        <RepositoryUrl>https://github.com/altamkp/DotnetEx</RepositoryUrl>
+
+        <LangVersion>11.0</LangVersion>
+        <TargetFramework>net6.0</TargetFramework>
+        <IsPackable>true</IsPackable>
+        <OutputType>Library</OutputType>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <NoWarn>IDE1006</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+       <None Include="README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+</Project>

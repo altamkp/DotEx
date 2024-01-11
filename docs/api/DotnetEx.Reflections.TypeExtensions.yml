@@ -1,0 +1,2025 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotnetEx.Reflections.TypeExtensions
+  commentId: T:DotnetEx.Reflections.TypeExtensions
+  id: TypeExtensions
+  parent: DotnetEx.Reflections
+  children:
+  - DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetGenericInterfaceType(System.Type,System.Type)
+  - DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  - DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType(System.Type,System.Type,System.Type@)
+  langs:
+  - csharp
+  - vb
+  name: TypeExtensions
+  nameWithType: TypeExtensions
+  fullName: DotnetEx.Reflections.TypeExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: TypeExtensions
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 8
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Extensions for <xref href="System.Type" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class TypeExtensions
+    content.vb: Public Module TypeExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DotnetEx.Reflections.TypeExtensions.GetGenericInterfaceType(System.Type,System.Type)
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetGenericInterfaceType(System.Type,System.Type)
+  id: GetGenericInterfaceType(System.Type,System.Type)
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGenericInterfaceType(Type, Type)
+  nameWithType: TypeExtensions.GetGenericInterfaceType(Type, Type)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetGenericInterfaceType(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetGenericInterfaceType
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 17
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Gets the interface type from <code class="paramref">genericInterfaceType</code>.
+  example: []
+  syntax:
+    content: public static Type GetGenericInterfaceType(this Type type, Type genericInterfaceType)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to inspect.
+    - id: genericInterfaceType
+      type: System.Type
+      description: Generic interface type to match.
+    return:
+      type: System.Type
+      description: ''
+    content.vb: Public Shared Function GetGenericInterfaceType(type As Type, genericInterfaceType As Type) As Type
+  overload: DotnetEx.Reflections.TypeExtensions.GetGenericInterfaceType*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">type</code> does not implement
+          <code class="paramref">genericInterfaceType</code>
+- uid: DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType(System.Type,System.Type,System.Type@)
+  commentId: M:DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType(System.Type,System.Type,System.Type@)
+  id: TryGetGenericInterfaceType(System.Type,System.Type,System.Type@)
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetGenericInterfaceType(Type, Type, out Type?)
+  nameWithType: TypeExtensions.TryGetGenericInterfaceType(Type, Type, out Type?)
+  fullName: DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType(System.Type, System.Type, out System.Type?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: TryGetGenericInterfaceType
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 33
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Checks if type implements <code class="paramref">genericInterfaceType</code>.
+  example: []
+  syntax:
+    content: public static bool TryGetGenericInterfaceType(this Type type, Type genericInterfaceType, out Type? interfaceType)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to inspect.
+    - id: genericInterfaceType
+      type: System.Type
+      description: Generic interface type to match.
+    - id: interfaceType
+      type: System.Type
+      description: Interface type if successfully matched, otherwise null.
+    return:
+      type: System.Boolean
+      description: True if interface type successfully matched, otherwise false.
+    content.vb: Public Shared Function TryGetGenericInterfaceType(type As Type, genericInterfaceType As Type, interfaceType As Type) As Boolean
+  overload: DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">genericInterfaceType</code>
+          is not a generic interface type.
+  nameWithType.vb: TypeExtensions.TryGetGenericInterfaceType(Type, Type, Type)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType(System.Type, System.Type, System.Type)
+  name.vb: TryGetGenericInterfaceType(Type, Type, Type)
+- uid: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetMembersWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMembersWithAttribute(Type, Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetMembersWithAttribute(Type, Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute(System.Type, System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetMembersWithAttribute
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 49
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all members in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: public static IEnumerable<MemberInfo> GetMembersWithAttribute(this Type type, Type attrType, BindingFlags? flags = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to search.
+    - id: attrType
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+      description: Members with the given attribute defined.
+    content.vb: Public Shared Function GetMembersWithAttribute(type As Type, attrType As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of MemberInfo)
+  overload: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute*
+- uid: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetMembersWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMembersWithAttribute<T>(Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetMembersWithAttribute<T>(Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute<T>(System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetMembersWithAttribute
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 61
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all members in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<MemberInfo> GetMembersWithAttribute<T>(this Type type, BindingFlags? flags = null) where T : Attribute'
+    parameters:
+    - id: type
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    typeParameters:
+    - id: T
+      description: Type to search.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+      description: Members with the given attribute defined.
+    content.vb: Public Shared Function GetMembersWithAttribute(Of T As Attribute)(type As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of MemberInfo)
+  overload: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute*
+  nameWithType.vb: TypeExtensions.GetMembersWithAttribute(Of T)(Type, BindingFlags?)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute(Of T)(System.Type, System.Reflection.BindingFlags?)
+  name.vb: GetMembersWithAttribute(Of T)(Type, BindingFlags?)
+- uid: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetMembersAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMembersAndAttributes(Type, Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetMembersAndAttributes(Type, Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes(System.Type, System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetMembersAndAttributes
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 73
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all members and their respective attributes in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: public static IEnumerable<(MemberInfo memberInfo, Attribute[] attributes)> GetMembersAndAttributes(this Type type, Type attrType, BindingFlags? flags = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to search.
+    - id: attrType
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MemberInfo,System.Attribute[]}}
+      description: Members with the given attribute defined, together with the respective attributes..
+    content.vb: Public Shared Function GetMembersAndAttributes(type As Type, attrType As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of (memberInfo As MemberInfo, attributes As Attribute()))
+  overload: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes*
+- uid: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetMembersAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMembersAndAttributes<T>(Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetMembersAndAttributes<T>(Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes<T>(System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetMembersAndAttributes
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 92
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all members and their respective attributes in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<(MemberInfo memberInfo, T[] attributes)> GetMembersAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute'
+    parameters:
+    - id: type
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    typeParameters:
+    - id: T
+      description: Type to search.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MemberInfo,{T}[]}}
+      description: Members with the given attribute defined, together with the respective attributes..
+    content.vb: Public Shared Function GetMembersAndAttributes(Of T As Attribute)(type As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of (memberInfo As MemberInfo, attributes As T()))
+  overload: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes*
+  nameWithType.vb: TypeExtensions.GetMembersAndAttributes(Of T)(Type, BindingFlags?)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes(Of T)(System.Type, System.Reflection.BindingFlags?)
+  name.vb: GetMembersAndAttributes(Of T)(Type, BindingFlags?)
+- uid: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetPropertiesWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPropertiesWithAttribute(Type, Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetPropertiesWithAttribute(Type, Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute(System.Type, System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetPropertiesWithAttribute
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 112
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all properties in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: public static IEnumerable<PropertyInfo> GetPropertiesWithAttribute(this Type type, Type attrType, BindingFlags? flags = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to search.
+    - id: attrType
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+      description: Properties with the given attribute defined.
+    content.vb: Public Shared Function GetPropertiesWithAttribute(type As Type, attrType As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of PropertyInfo)
+  overload: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute*
+- uid: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetPropertiesWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPropertiesWithAttribute<T>(Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetPropertiesWithAttribute<T>(Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute<T>(System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetPropertiesWithAttribute
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 124
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all properties in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<PropertyInfo> GetPropertiesWithAttribute<T>(this Type type, BindingFlags? flags = null) where T : Attribute'
+    parameters:
+    - id: type
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    typeParameters:
+    - id: T
+      description: Type to search.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+      description: Properties with the given attribute defined.
+    content.vb: Public Shared Function GetPropertiesWithAttribute(Of T As Attribute)(type As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of PropertyInfo)
+  overload: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute*
+  nameWithType.vb: TypeExtensions.GetPropertiesWithAttribute(Of T)(Type, BindingFlags?)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute(Of T)(System.Type, System.Reflection.BindingFlags?)
+  name.vb: GetPropertiesWithAttribute(Of T)(Type, BindingFlags?)
+- uid: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetPropertiesAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPropertiesAndAttributes(Type, Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetPropertiesAndAttributes(Type, Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes(System.Type, System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetPropertiesAndAttributes
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 136
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all properties and their respective attributes in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: public static IEnumerable<(PropertyInfo memberInfo, Attribute[] attributes)> GetPropertiesAndAttributes(this Type type, Type attrType, BindingFlags? flags = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to search.
+    - id: attrType
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.PropertyInfo,System.Attribute[]}}
+      description: Properties with the given attribute defined, together with the respective attributes..
+    content.vb: Public Shared Function GetPropertiesAndAttributes(type As Type, attrType As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of (memberInfo As PropertyInfo, attributes As Attribute()))
+  overload: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes*
+- uid: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetPropertiesAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPropertiesAndAttributes<T>(Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetPropertiesAndAttributes<T>(Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes<T>(System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetPropertiesAndAttributes
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 155
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all properties and their respective attributes in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<(PropertyInfo memberInfo, T[] attributes)> GetPropertiesAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute'
+    parameters:
+    - id: type
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    typeParameters:
+    - id: T
+      description: Type to search.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.PropertyInfo,{T}[]}}
+      description: Properties with the given attribute defined, together with the respective attributes..
+    content.vb: Public Shared Function GetPropertiesAndAttributes(Of T As Attribute)(type As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of (memberInfo As PropertyInfo, attributes As T()))
+  overload: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes*
+  nameWithType.vb: TypeExtensions.GetPropertiesAndAttributes(Of T)(Type, BindingFlags?)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes(Of T)(System.Type, System.Reflection.BindingFlags?)
+  name.vb: GetPropertiesAndAttributes(Of T)(Type, BindingFlags?)
+- uid: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetFieldsWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetFieldsWithAttribute(Type, Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetFieldsWithAttribute(Type, Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute(System.Type, System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetFieldsWithAttribute
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 175
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all fields in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: public static IEnumerable<FieldInfo> GetFieldsWithAttribute(this Type type, Type attrType, BindingFlags? flags = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to search.
+    - id: attrType
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: Fields with the given attribute defined.
+    content.vb: Public Shared Function GetFieldsWithAttribute(type As Type, attrType As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of FieldInfo)
+  overload: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute*
+- uid: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetFieldsWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetFieldsWithAttribute<T>(Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetFieldsWithAttribute<T>(Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute<T>(System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetFieldsWithAttribute
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 187
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all fields in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<FieldInfo> GetFieldsWithAttribute<T>(this Type type, BindingFlags? flags = null) where T : Attribute'
+    parameters:
+    - id: type
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    typeParameters:
+    - id: T
+      description: Type to search.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: Fields with the given attribute defined.
+    content.vb: Public Shared Function GetFieldsWithAttribute(Of T As Attribute)(type As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of FieldInfo)
+  overload: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute*
+  nameWithType.vb: TypeExtensions.GetFieldsWithAttribute(Of T)(Type, BindingFlags?)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute(Of T)(System.Type, System.Reflection.BindingFlags?)
+  name.vb: GetFieldsWithAttribute(Of T)(Type, BindingFlags?)
+- uid: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetFieldsAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetFieldsAndAttributes(Type, Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetFieldsAndAttributes(Type, Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes(System.Type, System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetFieldsAndAttributes
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 199
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all fields and their respective attributes in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: public static IEnumerable<(FieldInfo memberInfo, Attribute[] attributes)> GetFieldsAndAttributes(this Type type, Type attrType, BindingFlags? flags = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to search.
+    - id: attrType
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.FieldInfo,System.Attribute[]}}
+      description: Fields with the given attribute defined, together with the respective attributes..
+    content.vb: Public Shared Function GetFieldsAndAttributes(type As Type, attrType As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of (memberInfo As FieldInfo, attributes As Attribute()))
+  overload: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes*
+- uid: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetFieldsAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetFieldsAndAttributes<T>(Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetFieldsAndAttributes<T>(Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes<T>(System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetFieldsAndAttributes
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 218
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all fields and their respective attributes in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<(FieldInfo memberInfo, T[] attributes)> GetFieldsAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute'
+    parameters:
+    - id: type
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    typeParameters:
+    - id: T
+      description: Type to search.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.FieldInfo,{T}[]}}
+      description: Fields with the given attribute defined, together with the respective attributes..
+    content.vb: Public Shared Function GetFieldsAndAttributes(Of T As Attribute)(type As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of (memberInfo As FieldInfo, attributes As T()))
+  overload: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes*
+  nameWithType.vb: TypeExtensions.GetFieldsAndAttributes(Of T)(Type, BindingFlags?)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes(Of T)(System.Type, System.Reflection.BindingFlags?)
+  name.vb: GetFieldsAndAttributes(Of T)(Type, BindingFlags?)
+- uid: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetMethodsWithAttribute(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodsWithAttribute(Type, Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetMethodsWithAttribute(Type, Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute(System.Type, System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetMethodsWithAttribute
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 238
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all methods in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: public static IEnumerable<MethodInfo> GetMethodsWithAttribute(this Type type, Type attrType, BindingFlags? flags = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to search.
+    - id: attrType
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: Methods with the given attribute defined.
+    content.vb: Public Shared Function GetMethodsWithAttribute(type As Type, attrType As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of MethodInfo)
+  overload: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute*
+- uid: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetMethodsWithAttribute``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodsWithAttribute<T>(Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetMethodsWithAttribute<T>(Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute<T>(System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetMethodsWithAttribute
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 250
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all methods in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<MethodInfo> GetMethodsWithAttribute<T>(this Type type, BindingFlags? flags = null) where T : Attribute'
+    parameters:
+    - id: type
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    typeParameters:
+    - id: T
+      description: Type to search.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: Methods with the given attribute defined.
+    content.vb: Public Shared Function GetMethodsWithAttribute(Of T As Attribute)(type As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of MethodInfo)
+  overload: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute*
+  nameWithType.vb: TypeExtensions.GetMethodsWithAttribute(Of T)(Type, BindingFlags?)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute(Of T)(System.Type, System.Reflection.BindingFlags?)
+  name.vb: GetMethodsWithAttribute(Of T)(Type, BindingFlags?)
+- uid: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetMethodsAndAttributes(System.Type,System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodsAndAttributes(Type, Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetMethodsAndAttributes(Type, Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes(System.Type, System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetMethodsAndAttributes
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 262
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all methods and their respective attributes in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: public static IEnumerable<(MethodInfo memberInfo, Attribute[] attributes)> GetMethodsAndAttributes(this Type type, Type attrType, BindingFlags? flags = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type to search.
+    - id: attrType
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MethodInfo,System.Attribute[]}}
+      description: Methods with the given attribute defined, together with the respective attributes..
+    content.vb: Public Shared Function GetMethodsAndAttributes(type As Type, attrType As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of (memberInfo As MethodInfo, attributes As Attribute()))
+  overload: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes*
+- uid: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  commentId: M:DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  id: GetMethodsAndAttributes``1(System.Type,System.Nullable{System.Reflection.BindingFlags})
+  isExtensionMethod: true
+  parent: DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodsAndAttributes<T>(Type, BindingFlags?)
+  nameWithType: TypeExtensions.GetMethodsAndAttributes<T>(Type, BindingFlags?)
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes<T>(System.Type, System.Reflection.BindingFlags?)
+  type: Method
+  source:
+    remote:
+      path: src/Reflections/TypeExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: GetMethodsAndAttributes
+    path: ../src/Reflections/TypeExtensions.cs
+    startLine: 281
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Reflections
+  summary: Returns all methods and their respective attributes in the type annotated with the given attribute.
+  example: []
+  syntax:
+    content: 'public static IEnumerable<(MethodInfo memberInfo, T[] attributes)> GetMethodsAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute'
+    parameters:
+    - id: type
+      type: System.Type
+      description: Attribute to match.
+    - id: flags
+      type: System.Nullable{System.Reflection.BindingFlags}
+      description: Binding flags to match.
+    typeParameters:
+    - id: T
+      description: Type to search.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MethodInfo,{T}[]}}
+      description: Methods with the given attribute defined, together with the respective attributes..
+    content.vb: Public Shared Function GetMethodsAndAttributes(Of T As Attribute)(type As Type, flags As BindingFlags? = Nothing) As IEnumerable(Of (memberInfo As MethodInfo, attributes As T()))
+  overload: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes*
+  nameWithType.vb: TypeExtensions.GetMethodsAndAttributes(Of T)(Type, BindingFlags?)
+  fullName.vb: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes(Of T)(System.Type, System.Reflection.BindingFlags?)
+  name.vb: GetMethodsAndAttributes(Of T)(Type, BindingFlags?)
+references:
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: DotnetEx.Reflections
+  commentId: N:DotnetEx.Reflections
+  href: DotnetEx.html
+  name: DotnetEx.Reflections
+  nameWithType: DotnetEx.Reflections
+  fullName: DotnetEx.Reflections
+  spec.csharp:
+  - uid: DotnetEx
+    name: DotnetEx
+    href: DotnetEx.html
+  - name: .
+  - uid: DotnetEx.Reflections
+    name: Reflections
+    href: DotnetEx.Reflections.html
+  spec.vb:
+  - uid: DotnetEx
+    name: DotnetEx
+    href: DotnetEx.html
+  - name: .
+  - uid: DotnetEx.Reflections
+    name: Reflections
+    href: DotnetEx.Reflections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: DotnetEx.Reflections.TypeExtensions.GetGenericInterfaceType*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetGenericInterfaceType
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetGenericInterfaceType_System_Type_System_Type_
+  name: GetGenericInterfaceType
+  nameWithType: TypeExtensions.GetGenericInterfaceType
+  fullName: DotnetEx.Reflections.TypeExtensions.GetGenericInterfaceType
+- uid: DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_TryGetGenericInterfaceType_System_Type_System_Type_System_Type__
+  name: TryGetGenericInterfaceType
+  nameWithType: TypeExtensions.TryGetGenericInterfaceType
+  fullName: DotnetEx.Reflections.TypeExtensions.TryGetGenericInterfaceType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetMembersWithAttribute_System_Type_System_Type_System_Nullable_System_Reflection_BindingFlags__
+  name: GetMembersWithAttribute
+  nameWithType: TypeExtensions.GetMembersWithAttribute
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMembersWithAttribute
+- uid: System.Nullable{System.Reflection.BindingFlags}
+  commentId: T:System.Nullable{System.Reflection.BindingFlags}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  name: BindingFlags?
+  nameWithType: BindingFlags?
+  fullName: System.Reflection.BindingFlags?
+  spec.csharp:
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: '?'
+  spec.vb:
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: '?'
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MemberInfo>
+  nameWithType: IEnumerable<MemberInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MemberInfo>
+  nameWithType.vb: IEnumerable(Of MemberInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MemberInfo)
+  name.vb: IEnumerable(Of MemberInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetMembersAndAttributes_System_Type_System_Type_System_Nullable_System_Reflection_BindingFlags__
+  name: GetMembersAndAttributes
+  nameWithType: TypeExtensions.GetMembersAndAttributes
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMembersAndAttributes
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MemberInfo,System.Attribute[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MemberInfo,System.Attribute[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(MemberInfo memberInfo, Attribute[] attributes)>
+  nameWithType: IEnumerable<(MemberInfo memberInfo, Attribute[] attributes)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Reflection.MemberInfo memberInfo, System.Attribute[] attributes)>
+  nameWithType.vb: IEnumerable(Of (memberInfo As MemberInfo, attributes As Attribute()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (memberInfo As System.Reflection.MemberInfo, attributes As System.Attribute()))
+  name.vb: IEnumerable(Of (memberInfo As MemberInfo, attributes As Attribute()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MemberInfo,System.Attribute[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.memberinfo,system.attribute[]-.memberinfo
+  - name: ','
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MemberInfo,System.Attribute[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.memberinfo,system.attribute[]-.attributes
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Reflection.MemberInfo,System.Attribute[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.memberinfo,system.attribute[]-.memberinfo
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MemberInfo,System.Attribute[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.memberinfo,system.attribute[]-.attributes
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MemberInfo,{T}[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MemberInfo,``0[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(MemberInfo memberInfo, T[] attributes)>
+  nameWithType: IEnumerable<(MemberInfo memberInfo, T[] attributes)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Reflection.MemberInfo memberInfo, T[] attributes)>
+  nameWithType.vb: IEnumerable(Of (memberInfo As MemberInfo, attributes As T()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (memberInfo As System.Reflection.MemberInfo, attributes As T()))
+  name.vb: IEnumerable(Of (memberInfo As MemberInfo, attributes As T()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MemberInfo,``0[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.memberinfo,--0[]-.memberinfo
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MemberInfo,``0[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.memberinfo,--0[]-.attributes
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Reflection.MemberInfo,``0[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.memberinfo,--0[]-.memberinfo
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MemberInfo,``0[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.memberinfo,--0[]-.attributes
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetPropertiesWithAttribute_System_Type_System_Type_System_Nullable_System_Reflection_BindingFlags__
+  name: GetPropertiesWithAttribute
+  nameWithType: TypeExtensions.GetPropertiesWithAttribute
+  fullName: DotnetEx.Reflections.TypeExtensions.GetPropertiesWithAttribute
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PropertyInfo>
+  nameWithType: IEnumerable<PropertyInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.PropertyInfo>
+  nameWithType.vb: IEnumerable(Of PropertyInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.PropertyInfo)
+  name.vb: IEnumerable(Of PropertyInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: )
+- uid: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetPropertiesAndAttributes_System_Type_System_Type_System_Nullable_System_Reflection_BindingFlags__
+  name: GetPropertiesAndAttributes
+  nameWithType: TypeExtensions.GetPropertiesAndAttributes
+  fullName: DotnetEx.Reflections.TypeExtensions.GetPropertiesAndAttributes
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.PropertyInfo,System.Attribute[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.PropertyInfo,System.Attribute[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(PropertyInfo memberInfo, Attribute[] attributes)>
+  nameWithType: IEnumerable<(PropertyInfo memberInfo, Attribute[] attributes)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Reflection.PropertyInfo memberInfo, System.Attribute[] attributes)>
+  nameWithType.vb: IEnumerable(Of (memberInfo As PropertyInfo, attributes As Attribute()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (memberInfo As System.Reflection.PropertyInfo, attributes As System.Attribute()))
+  name.vb: IEnumerable(Of (memberInfo As PropertyInfo, attributes As Attribute()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.PropertyInfo,System.Attribute[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.propertyinfo,system.attribute[]-.memberinfo
+  - name: ','
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.PropertyInfo,System.Attribute[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.propertyinfo,system.attribute[]-.attributes
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Reflection.PropertyInfo,System.Attribute[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.propertyinfo,system.attribute[]-.memberinfo
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.PropertyInfo,System.Attribute[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.propertyinfo,system.attribute[]-.attributes
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.PropertyInfo,{T}[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.PropertyInfo,``0[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(PropertyInfo memberInfo, T[] attributes)>
+  nameWithType: IEnumerable<(PropertyInfo memberInfo, T[] attributes)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Reflection.PropertyInfo memberInfo, T[] attributes)>
+  nameWithType.vb: IEnumerable(Of (memberInfo As PropertyInfo, attributes As T()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (memberInfo As System.Reflection.PropertyInfo, attributes As T()))
+  name.vb: IEnumerable(Of (memberInfo As PropertyInfo, attributes As T()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.PropertyInfo,``0[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.propertyinfo,--0[]-.memberinfo
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.PropertyInfo,``0[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.propertyinfo,--0[]-.attributes
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Reflection.PropertyInfo,``0[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.propertyinfo,--0[]-.memberinfo
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.PropertyInfo,``0[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.propertyinfo,--0[]-.attributes
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetFieldsWithAttribute_System_Type_System_Type_System_Nullable_System_Reflection_BindingFlags__
+  name: GetFieldsWithAttribute
+  nameWithType: TypeExtensions.GetFieldsWithAttribute
+  fullName: DotnetEx.Reflections.TypeExtensions.GetFieldsWithAttribute
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<FieldInfo>
+  nameWithType: IEnumerable<FieldInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.FieldInfo>
+  nameWithType.vb: IEnumerable(Of FieldInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.FieldInfo)
+  name.vb: IEnumerable(Of FieldInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: )
+- uid: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetFieldsAndAttributes_System_Type_System_Type_System_Nullable_System_Reflection_BindingFlags__
+  name: GetFieldsAndAttributes
+  nameWithType: TypeExtensions.GetFieldsAndAttributes
+  fullName: DotnetEx.Reflections.TypeExtensions.GetFieldsAndAttributes
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.FieldInfo,System.Attribute[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.FieldInfo,System.Attribute[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(FieldInfo memberInfo, Attribute[] attributes)>
+  nameWithType: IEnumerable<(FieldInfo memberInfo, Attribute[] attributes)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Reflection.FieldInfo memberInfo, System.Attribute[] attributes)>
+  nameWithType.vb: IEnumerable(Of (memberInfo As FieldInfo, attributes As Attribute()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (memberInfo As System.Reflection.FieldInfo, attributes As System.Attribute()))
+  name.vb: IEnumerable(Of (memberInfo As FieldInfo, attributes As Attribute()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.FieldInfo,System.Attribute[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.fieldinfo,system.attribute[]-.memberinfo
+  - name: ','
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.FieldInfo,System.Attribute[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.fieldinfo,system.attribute[]-.attributes
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Reflection.FieldInfo,System.Attribute[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.fieldinfo,system.attribute[]-.memberinfo
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.FieldInfo,System.Attribute[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.fieldinfo,system.attribute[]-.attributes
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.FieldInfo,{T}[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.FieldInfo,``0[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(FieldInfo memberInfo, T[] attributes)>
+  nameWithType: IEnumerable<(FieldInfo memberInfo, T[] attributes)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Reflection.FieldInfo memberInfo, T[] attributes)>
+  nameWithType.vb: IEnumerable(Of (memberInfo As FieldInfo, attributes As T()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (memberInfo As System.Reflection.FieldInfo, attributes As T()))
+  name.vb: IEnumerable(Of (memberInfo As FieldInfo, attributes As T()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.FieldInfo,``0[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.fieldinfo,--0[]-.memberinfo
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.FieldInfo,``0[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.fieldinfo,--0[]-.attributes
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Reflection.FieldInfo,``0[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.fieldinfo,--0[]-.memberinfo
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.FieldInfo,``0[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.fieldinfo,--0[]-.attributes
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetMethodsWithAttribute_System_Type_System_Type_System_Nullable_System_Reflection_BindingFlags__
+  name: GetMethodsWithAttribute
+  nameWithType: TypeExtensions.GetMethodsWithAttribute
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMethodsWithAttribute
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MethodInfo>
+  nameWithType: IEnumerable<MethodInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  nameWithType.vb: IEnumerable(Of MethodInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MethodInfo)
+  name.vb: IEnumerable(Of MethodInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: )
+- uid: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes*
+  commentId: Overload:DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes
+  href: DotnetEx.Reflections.TypeExtensions.html#DotnetEx_Reflections_TypeExtensions_GetMethodsAndAttributes_System_Type_System_Type_System_Nullable_System_Reflection_BindingFlags__
+  name: GetMethodsAndAttributes
+  nameWithType: TypeExtensions.GetMethodsAndAttributes
+  fullName: DotnetEx.Reflections.TypeExtensions.GetMethodsAndAttributes
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MethodInfo,System.Attribute[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MethodInfo,System.Attribute[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(MethodInfo memberInfo, Attribute[] attributes)>
+  nameWithType: IEnumerable<(MethodInfo memberInfo, Attribute[] attributes)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Reflection.MethodInfo memberInfo, System.Attribute[] attributes)>
+  nameWithType.vb: IEnumerable(Of (memberInfo As MethodInfo, attributes As Attribute()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (memberInfo As System.Reflection.MethodInfo, attributes As System.Attribute()))
+  name.vb: IEnumerable(Of (memberInfo As MethodInfo, attributes As Attribute()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MethodInfo,System.Attribute[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.methodinfo,system.attribute[]-.memberinfo
+  - name: ','
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MethodInfo,System.Attribute[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.methodinfo,system.attribute[]-.attributes
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Reflection.MethodInfo,System.Attribute[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.methodinfo,system.attribute[]-.memberinfo
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MethodInfo,System.Attribute[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.methodinfo,system.attribute[]-.attributes
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MethodInfo,{T}[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Reflection.MethodInfo,``0[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(MethodInfo memberInfo, T[] attributes)>
+  nameWithType: IEnumerable<(MethodInfo memberInfo, T[] attributes)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Reflection.MethodInfo memberInfo, T[] attributes)>
+  nameWithType.vb: IEnumerable(Of (memberInfo As MethodInfo, attributes As T()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (memberInfo As System.Reflection.MethodInfo, attributes As T()))
+  name.vb: IEnumerable(Of (memberInfo As MethodInfo, attributes As T()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MethodInfo,``0[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.methodinfo,--0[]-.memberinfo
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MethodInfo,``0[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.methodinfo,--0[]-.attributes
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Reflection.MethodInfo,``0[]}.memberInfo
+    name: memberInfo
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.methodinfo,--0[]-.memberinfo
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Reflection.MethodInfo,``0[]}.attributes
+    name: attributes
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.reflection.methodinfo,--0[]-.attributes
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: (
+  - name: )
+  - name: )
+  - name: )

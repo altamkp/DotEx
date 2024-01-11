@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotnetEx.Reflections
+  commentId: N:DotnetEx.Reflections
+  id: DotnetEx.Reflections
+  children:
+  - DotnetEx.Reflections.AssemblyExtensions
+  - DotnetEx.Reflections.MemberInfoExtensions
+  - DotnetEx.Reflections.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: DotnetEx.Reflections
+  nameWithType: DotnetEx.Reflections
+  fullName: DotnetEx.Reflections
+  type: Namespace
+  assemblies:
+  - DotnetEx
+references:
+- uid: DotnetEx.Reflections.AssemblyExtensions
+  commentId: T:DotnetEx.Reflections.AssemblyExtensions
+  href: DotnetEx.Reflections.AssemblyExtensions.html
+  name: AssemblyExtensions
+  nameWithType: AssemblyExtensions
+  fullName: DotnetEx.Reflections.AssemblyExtensions
+- uid: DotnetEx.Reflections.MemberInfoExtensions
+  commentId: T:DotnetEx.Reflections.MemberInfoExtensions
+  href: DotnetEx.Reflections.MemberInfoExtensions.html
+  name: MemberInfoExtensions
+  nameWithType: MemberInfoExtensions
+  fullName: DotnetEx.Reflections.MemberInfoExtensions
+- uid: DotnetEx.Reflections.TypeExtensions
+  commentId: T:DotnetEx.Reflections.TypeExtensions
+  href: DotnetEx.Reflections.TypeExtensions.html
+  name: TypeExtensions
+  nameWithType: TypeExtensions
+  fullName: DotnetEx.Reflections.TypeExtensions

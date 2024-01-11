@@ -1,0 +1,23 @@
+### YamlMime:TableOfContent
+items:
+- uid: DotnetEx.Maths
+  name: DotnetEx.Maths
+  items:
+  - uid: DotnetEx.Maths.ComparableExtensions
+    name: ComparableExtensions
+  - uid: DotnetEx.Maths.DoubleExtensions
+    name: DoubleExtensions
+  - uid: DotnetEx.Maths.FloatExtensions
+    name: FloatExtensions
+  - uid: DotnetEx.Maths.MathDef
+    name: MathDef
+- uid: DotnetEx.Reflections
+  name: DotnetEx.Reflections
+  items:
+  - uid: DotnetEx.Reflections.AssemblyExtensions
+    name: AssemblyExtensions
+  - uid: DotnetEx.Reflections.MemberInfoExtensions
+    name: MemberInfoExtensions
+  - uid: DotnetEx.Reflections.TypeExtensions
+    name: TypeExtensions
+memberLayout: SamePage

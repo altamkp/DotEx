@@ -1,0 +1,485 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotnetEx.Maths.DoubleExtensions
+  commentId: T:DotnetEx.Maths.DoubleExtensions
+  id: DoubleExtensions
+  parent: DotnetEx.Maths
+  children:
+  - DotnetEx.Maths.DoubleExtensions.IsEqualApprox(System.Double,System.Double,System.Double)
+  - DotnetEx.Maths.DoubleExtensions.IsZeroApprox(System.Double,System.Double)
+  - DotnetEx.Maths.DoubleExtensions.Trim(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: DoubleExtensions
+  nameWithType: DoubleExtensions
+  fullName: DotnetEx.Maths.DoubleExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Maths/DoubleExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: DoubleExtensions
+    path: ../src/Maths/DoubleExtensions.cs
+    startLine: 5
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Maths
+  summary: Extensions for <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class DoubleExtensions
+    content.vb: Public Module DoubleExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DotnetEx.Maths.DoubleExtensions.Trim(System.Double,System.Double)
+  commentId: M:DotnetEx.Maths.DoubleExtensions.Trim(System.Double,System.Double)
+  id: Trim(System.Double,System.Double)
+  isExtensionMethod: true
+  parent: DotnetEx.Maths.DoubleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Trim(double, double)
+  nameWithType: DoubleExtensions.Trim(double, double)
+  fullName: DotnetEx.Maths.DoubleExtensions.Trim(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Maths/DoubleExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: Trim
+    path: ../src/Maths/DoubleExtensions.cs
+    startLine: 14
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Maths
+  summary: Trims value to a given precision.
+  example: []
+  syntax:
+    content: public static double Trim(this double value, double precision = 0.0010000000474974513)
+    parameters:
+    - id: value
+      type: System.Double
+      description: Value to trim.
+    - id: precision
+      type: System.Double
+      description: Precision to use.
+    return:
+      type: System.Double
+      description: Trimmed value.
+    content.vb: Public Shared Function Trim(value As Double, precision As Double = 0.0010000000474974513) As Double
+  overload: DotnetEx.Maths.DoubleExtensions.Trim*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <code class="paramref">precision</code>
+          is not positive and smaller than 1.
+  nameWithType.vb: DoubleExtensions.Trim(Double, Double)
+  fullName.vb: DotnetEx.Maths.DoubleExtensions.Trim(Double, Double)
+  name.vb: Trim(Double, Double)
+- uid: DotnetEx.Maths.DoubleExtensions.IsEqualApprox(System.Double,System.Double,System.Double)
+  commentId: M:DotnetEx.Maths.DoubleExtensions.IsEqualApprox(System.Double,System.Double,System.Double)
+  id: IsEqualApprox(System.Double,System.Double,System.Double)
+  isExtensionMethod: true
+  parent: DotnetEx.Maths.DoubleExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsEqualApprox(double, double, double)
+  nameWithType: DoubleExtensions.IsEqualApprox(double, double, double)
+  fullName: DotnetEx.Maths.DoubleExtensions.IsEqualApprox(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Maths/DoubleExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: IsEqualApprox
+    path: ../src/Maths/DoubleExtensions.cs
+    startLine: 28
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Maths
+  summary: Checks if the two values are approximately equal.
+  example: []
+  syntax:
+    content: public static bool IsEqualApprox(this double a, double b, double precision = 0.0010000000474974513)
+    parameters:
+    - id: a
+      type: System.Double
+      description: First value.
+    - id: b
+      type: System.Double
+      description: Second value.
+    - id: precision
+      type: System.Double
+      description: Precision to use.
+    return:
+      type: System.Boolean
+      description: True if the two values are approximately equal.
+    content.vb: Public Shared Function IsEqualApprox(a As Double, b As Double, precision As Double = 0.0010000000474974513) As Boolean
+  overload: DotnetEx.Maths.DoubleExtensions.IsEqualApprox*
+  nameWithType.vb: DoubleExtensions.IsEqualApprox(Double, Double, Double)
+  fullName.vb: DotnetEx.Maths.DoubleExtensions.IsEqualApprox(Double, Double, Double)
+  name.vb: IsEqualApprox(Double, Double, Double)
+- uid: DotnetEx.Maths.DoubleExtensions.IsZeroApprox(System.Double,System.Double)
+  commentId: M:DotnetEx.Maths.DoubleExtensions.IsZeroApprox(System.Double,System.Double)
+  id: IsZeroApprox(System.Double,System.Double)
+  isExtensionMethod: true
+  parent: DotnetEx.Maths.DoubleExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsZeroApprox(double, double)
+  nameWithType: DoubleExtensions.IsZeroApprox(double, double)
+  fullName: DotnetEx.Maths.DoubleExtensions.IsZeroApprox(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Maths/DoubleExtensions.cs
+      branch: master
+      repo: https://github.com/altamkp/DotnetEx.git
+    id: IsZeroApprox
+    path: ../src/Maths/DoubleExtensions.cs
+    startLine: 38
+  assemblies:
+  - DotnetEx
+  namespace: DotnetEx.Maths
+  summary: Checks if the value is approximately zero.
+  example: []
+  syntax:
+    content: public static bool IsZeroApprox(this double value, double precision = 0.0010000000474974513)
+    parameters:
+    - id: value
+      type: System.Double
+      description: Value to check.
+    - id: precision
+      type: System.Double
+      description: Precision to use.
+    return:
+      type: System.Boolean
+      description: True if the value is approximately zero.
+    content.vb: Public Shared Function IsZeroApprox(value As Double, precision As Double = 0.0010000000474974513) As Boolean
+  overload: DotnetEx.Maths.DoubleExtensions.IsZeroApprox*
+  nameWithType.vb: DoubleExtensions.IsZeroApprox(Double, Double)
+  fullName.vb: DotnetEx.Maths.DoubleExtensions.IsZeroApprox(Double, Double)
+  name.vb: IsZeroApprox(Double, Double)
+references:
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: DotnetEx.Maths
+  commentId: N:DotnetEx.Maths
+  href: DotnetEx.html
+  name: DotnetEx.Maths
+  nameWithType: DotnetEx.Maths
+  fullName: DotnetEx.Maths
+  spec.csharp:
+  - uid: DotnetEx
+    name: DotnetEx
+    href: DotnetEx.html
+  - name: .
+  - uid: DotnetEx.Maths
+    name: Maths
+    href: DotnetEx.Maths.html
+  spec.vb:
+  - uid: DotnetEx
+    name: DotnetEx
+    href: DotnetEx.html
+  - name: .
+  - uid: DotnetEx.Maths
+    name: Maths
+    href: DotnetEx.Maths.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: DotnetEx.Maths.DoubleExtensions.Trim*
+  commentId: Overload:DotnetEx.Maths.DoubleExtensions.Trim
+  href: DotnetEx.Maths.DoubleExtensions.html#DotnetEx_Maths_DoubleExtensions_Trim_System_Double_System_Double_
+  name: Trim
+  nameWithType: DoubleExtensions.Trim
+  fullName: DotnetEx.Maths.DoubleExtensions.Trim
+- uid: DotnetEx.Maths.DoubleExtensions.IsEqualApprox*
+  commentId: Overload:DotnetEx.Maths.DoubleExtensions.IsEqualApprox
+  href: DotnetEx.Maths.DoubleExtensions.html#DotnetEx_Maths_DoubleExtensions_IsEqualApprox_System_Double_System_Double_System_Double_
+  name: IsEqualApprox
+  nameWithType: DoubleExtensions.IsEqualApprox
+  fullName: DotnetEx.Maths.DoubleExtensions.IsEqualApprox
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DotnetEx.Maths.DoubleExtensions.IsZeroApprox*
+  commentId: Overload:DotnetEx.Maths.DoubleExtensions.IsZeroApprox
+  href: DotnetEx.Maths.DoubleExtensions.html#DotnetEx_Maths_DoubleExtensions_IsZeroApprox_System_Double_System_Double_
+  name: IsZeroApprox
+  nameWithType: DoubleExtensions.IsZeroApprox
+  fullName: DotnetEx.Maths.DoubleExtensions.IsZeroApprox

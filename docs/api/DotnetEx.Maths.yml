@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotnetEx.Maths
+  commentId: N:DotnetEx.Maths
+  id: DotnetEx.Maths
+  children:
+  - DotnetEx.Maths.ComparableExtensions
+  - DotnetEx.Maths.DoubleExtensions
+  - DotnetEx.Maths.FloatExtensions
+  - DotnetEx.Maths.MathDef
+  langs:
+  - csharp
+  - vb
+  name: DotnetEx.Maths
+  nameWithType: DotnetEx.Maths
+  fullName: DotnetEx.Maths
+  type: Namespace
+  assemblies:
+  - DotnetEx
+references:
+- uid: DotnetEx.Maths.ComparableExtensions
+  commentId: T:DotnetEx.Maths.ComparableExtensions
+  href: DotnetEx.Maths.ComparableExtensions.html
+  name: ComparableExtensions
+  nameWithType: ComparableExtensions
+  fullName: DotnetEx.Maths.ComparableExtensions
+- uid: DotnetEx.Maths.DoubleExtensions
+  commentId: T:DotnetEx.Maths.DoubleExtensions
+  href: DotnetEx.Maths.DoubleExtensions.html
+  name: DoubleExtensions
+  nameWithType: DoubleExtensions
+  fullName: DotnetEx.Maths.DoubleExtensions
+- uid: DotnetEx.Maths.FloatExtensions
+  commentId: T:DotnetEx.Maths.FloatExtensions
+  href: DotnetEx.Maths.FloatExtensions.html
+  name: FloatExtensions
+  nameWithType: FloatExtensions
+  fullName: DotnetEx.Maths.FloatExtensions
+- uid: DotnetEx.Maths.MathDef
+  commentId: T:DotnetEx.Maths.MathDef
+  href: DotnetEx.Maths.MathDef.html
+  name: MathDef
+  nameWithType: MathDef
+  fullName: DotnetEx.Maths.MathDef
