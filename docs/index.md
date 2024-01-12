@@ -8,8 +8,4 @@ Currently available extensions:
 
 ##### License
 
-Available under the [MIT License](https://github.com/altamkp/DotEx/blob/master/LICENSE.md).
-
-##### Copyright
-
-Copyright (c) 2024 [altamkp](https://github.com/altamkp)
+Distributed under the [MIT License](https://github.com/altamkp/DotEx/blob/master/LICENSE.md). Copyright (c) 2024 [altamkp](https://github.com/altamkp).

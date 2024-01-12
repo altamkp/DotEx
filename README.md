@@ -13,8 +13,4 @@ Please refer to [this page](https://altamkp.github.io/DotEx) for a detailed docu
 
 ## License
 
-Available under the [MIT License](LICENSE.md).
-
-## Copyright
-
-Copyright (c) 2024 [altamkp](https://github.com/altamkp)
+Distributed under the [MIT License](LICENSE.md). Copyright (c) 2024 [altamkp](https://github.com/altamkp)
