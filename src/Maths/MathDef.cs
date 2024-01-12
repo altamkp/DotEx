@@ -1,4 +1,4 @@
-namespace Dotnet.Extensions.Maths;
+namespace Dotnet.Ex.Maths;
 
 /// <summary>
 /// Additional <see cref="Math"/> related definitions.

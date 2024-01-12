@@ -1,4 +1,4 @@
-namespace Dotnet.Extensions.Maths;
+namespace Dotnet.Ex.Maths;
 
 /// <summary>
 /// Extensions for <see cref="double"/>.
