@@ -2,11 +2,12 @@
 
     <PropertyGroup>
         <PackageId>DotEx</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.0.2</Version>
         <Authors>altamkp</Authors>
         <Company>altamkp</Company>
-        <PackageDescription>Dotnet extension library</PackageDescription>
+        <PackageDescription>Set of extension methods for .Net in C#.</PackageDescription>
         <RepositoryUrl>https://github.com/altamkp/DotEx</RepositoryUrl>
+        <PackageProjectUrl>https://altamkp.github.io/DotEx</PackageProjectUrl>
 
         <LangVersion>11.0</LangVersion>
         <TargetFramework>net6.0</TargetFramework>

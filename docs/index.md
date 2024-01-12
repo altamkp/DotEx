@@ -3,6 +3,7 @@
 **DotEx** provides a set of extension methods for .Net in C#.
 
 Currently available extensions:
+
 - [Maths](api/DotEx.Maths.yml)
 - [Reflections](api/DotEx.Reflections.yml)
 
