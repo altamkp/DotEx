@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
-namespace DotnetEx.Reflections;
+namespace Dotnet.Extensions.Reflections;
 
 /// <summary>
 /// Extensions for <see cref="Type"/>.

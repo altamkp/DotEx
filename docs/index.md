@@ -1,14 +1,14 @@
-# DotnetEx
+# Dotnet.Extensions
 
 **Dotnet Ex**tras provides a set of extension methods for .Net in C#.
 
 Currently available extensions:
-- [Maths](api/DotnetEx.Maths.yml)
-- [Reflections](api/DotnetEx.Reflections.yml)
+- [Maths](api/Dotnet.Extensions.Maths.yml)
+- [Reflections](api/Dotnet.Extensions.Reflections.yml)
 
 ##### License
 
-Available under the [MIT License](https://github.com/altamkp/DotnetEx/blob/master/LICENSE.md).
+Available under the [MIT License](https://github.com/altamkp/Dotnet.Extensions/blob/master/LICENSE.md).
 
 ##### Copyright
 
