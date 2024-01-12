@@ -1,4 +1,4 @@
-namespace Dotnet.Ex.Maths;
+namespace DotEx.Maths;
 
 /// <summary>
 /// Extensions for <see cref="float"/>.

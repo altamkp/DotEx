@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace Dotnet.Ex.Reflections;
+namespace DotEx.Reflections;
 
 /// <summary>
 /// Extensions for <see cref="MemberInfo"/>.

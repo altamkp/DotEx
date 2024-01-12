@@ -1,15 +1,15 @@
-# Dotnet.Ex
+# DotEx
 
-**Dotnet.Ex** provides a set of extension methods for .Net in C#.
+**DotEx** provides a set of extension methods for .Net in C#.
 
 Currently available extensions:
 
-- [Maths](https://altamkp.github.io/Dotnet.Ex/api/Dotnet.Ex.Maths.html)
-- [Reflections](https://altamkp.github.io/Dotnet.Ex/api/Dotnet.Ex.Reflections.html)
+- [Maths](https://altamkp.github.io/DotEx/api/DotEx.Maths.html)
+- [Reflections](https://altamkp.github.io/DotEx/api/DotEx.Reflections.html)
 
 ## Documentation
 
-Please refer to [this page](https://altamkp.github.io/Dotnet.Ex) for a detailed documentation on all available extensions.
+Please refer to [this page](https://altamkp.github.io/DotEx) for a detailed documentation on all available extensions.
 
 ## License
 

@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <PackageId>Dotnet.Ex</PackageId>
+        <PackageId>DotEx</PackageId>
         <Version>1.0.0</Version>
         <Authors>altamkp</Authors>
         <Company>altamkp</Company>
         <PackageDescription>Dotnet extension library</PackageDescription>
-        <RepositoryUrl>https://github.com/altamkp/Dotnet.Ex</RepositoryUrl>
+        <RepositoryUrl>https://github.com/altamkp/DotEx</RepositoryUrl>
 
         <LangVersion>11.0</LangVersion>
         <TargetFramework>net6.0</TargetFramework>
