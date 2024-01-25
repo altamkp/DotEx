@@ -71,7 +71,7 @@ public static class TypeExtensions {
     /// <param name="attrType">Attribute to match.</param>
     /// <param name="flags">Binding flags to match.</param>
     /// <returns>Members with the given attribute defined, together with the respective attributes..</returns>
-    public static IEnumerable<(MemberInfo memberInfo, Attribute[] attributes)> GetMembersAndAttributes(this Type type, Type attrType, BindingFlags? flags = null) {
+    public static IEnumerable<(MemberInfo MemberInfo, Attribute[] Attributes)> GetMembersAndAttributes(this Type type, Type attrType, BindingFlags? flags = null) {
         var members = flags == null ? type.GetMembers() : type.GetMembers(flags.Value);
         foreach (var member in members) {
             var attributes = member
@@ -90,7 +90,7 @@ public static class TypeExtensions {
     /// <param name="type">Attribute to match.</param>
     /// <param name="flags">Binding flags to match.</param>
     /// <returns>Members with the given attribute defined, together with the respective attributes..</returns>
-    public static IEnumerable<(MemberInfo memberInfo, T[] attributes)> GetMembersAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute {
+    public static IEnumerable<(MemberInfo MemberInfo, T[] Attributes)> GetMembersAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute {
         var members = flags == null ? type.GetMembers() : type.GetMembers(flags.Value);
         var attrType = typeof(T);
         foreach (var member in members) {
@@ -134,7 +134,7 @@ public static class TypeExtensions {
     /// <param name="attrType">Attribute to match.</param>
     /// <param name="flags">Binding flags to match.</param>
     /// <returns>Properties with the given attribute defined, together with the respective attributes..</returns>
-    public static IEnumerable<(PropertyInfo memberInfo, Attribute[] attributes)> GetPropertiesAndAttributes(this Type type, Type attrType, BindingFlags? flags = null) {
+    public static IEnumerable<(PropertyInfo PropertyInfo, Attribute[] Attributes)> GetPropertiesAndAttributes(this Type type, Type attrType, BindingFlags? flags = null) {
         var properties = flags == null ? type.GetProperties() : type.GetProperties(flags.Value);
         foreach (var property in properties) {
             var attributes = property
@@ -153,7 +153,7 @@ public static class TypeExtensions {
     /// <param name="type">Attribute to match.</param>
     /// <param name="flags">Binding flags to match.</param>
     /// <returns>Properties with the given attribute defined, together with the respective attributes..</returns>
-    public static IEnumerable<(PropertyInfo memberInfo, T[] attributes)> GetPropertiesAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute {
+    public static IEnumerable<(PropertyInfo PropertyInfo, T[] Attributes)> GetPropertiesAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute {
         var attrType = typeof(T);
         var properties = flags == null ? type.GetProperties() : type.GetProperties(flags.Value);
         foreach (var property in properties) {
@@ -197,7 +197,7 @@ public static class TypeExtensions {
     /// <param name="attrType">Attribute to match.</param>
     /// <param name="flags">Binding flags to match.</param>
     /// <returns>Fields with the given attribute defined, together with the respective attributes..</returns>
-    public static IEnumerable<(FieldInfo memberInfo, Attribute[] attributes)> GetFieldsAndAttributes(this Type type, Type attrType, BindingFlags? flags = null) {
+    public static IEnumerable<(FieldInfo FieldInfo, Attribute[] Attributes)> GetFieldsAndAttributes(this Type type, Type attrType, BindingFlags? flags = null) {
         var fields = flags == null ? type.GetFields() : type.GetFields(flags.Value);
         foreach (var field in fields) {
             var attributes = field
@@ -216,7 +216,7 @@ public static class TypeExtensions {
     /// <param name="type">Attribute to match.</param>
     /// <param name="flags">Binding flags to match.</param>
     /// <returns>Fields with the given attribute defined, together with the respective attributes..</returns>
-    public static IEnumerable<(FieldInfo memberInfo, T[] attributes)> GetFieldsAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute {
+    public static IEnumerable<(FieldInfo FieldInfo, T[] Attributes)> GetFieldsAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute {
         var attrType = typeof(T);
         var fields = flags == null ? type.GetFields() : type.GetFields(flags.Value);
         foreach (var field in fields) {
@@ -260,7 +260,7 @@ public static class TypeExtensions {
     /// <param name="attrType">Attribute to match.</param>
     /// <param name="flags">Binding flags to match.</param>
     /// <returns>Methods with the given attribute defined, together with the respective attributes..</returns>
-    public static IEnumerable<(MethodInfo memberInfo, Attribute[] attributes)> GetMethodsAndAttributes(this Type type, Type attrType, BindingFlags? flags = null) {
+    public static IEnumerable<(MethodInfo MethodInfo, Attribute[] Attributes)> GetMethodsAndAttributes(this Type type, Type attrType, BindingFlags? flags = null) {
         var methods = flags == null ? type.GetMethods() : type.GetMethods(flags.Value);
         foreach (var method in methods) {
             var attributes = method
@@ -279,7 +279,7 @@ public static class TypeExtensions {
     /// <param name="type">Attribute to match.</param>
     /// <param name="flags">Binding flags to match.</param>
     /// <returns>Methods with the given attribute defined, together with the respective attributes..</returns>
-    public static IEnumerable<(MethodInfo memberInfo, T[] attributes)> GetMethodsAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute {
+    public static IEnumerable<(MethodInfo MethodInfo, T[] Attributes)> GetMethodsAndAttributes<T>(this Type type, BindingFlags? flags = null) where T : Attribute {
         var attrType = typeof(T);
         var methods = flags == null ? type.GetMethods() : type.GetMethods(flags.Value);
         foreach (var method in methods) {

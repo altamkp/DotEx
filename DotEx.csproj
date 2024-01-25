@@ -2,7 +2,6 @@
 
     <PropertyGroup>
         <PackageId>DotEx</PackageId>
-        <Version>1.0.2</Version>
         <Authors>altamkp</Authors>
         <Company>altamkp</Company>
         <PackageDescription>Set of extension methods for .Net in C#.</PackageDescription>

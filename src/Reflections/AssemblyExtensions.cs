@@ -67,7 +67,7 @@ public static class AssemblyExtensions {
     /// <param name="attrType">Attribute to match.</param>
     /// <param name="allowAbstract">Allow abstract types, false by default</param>
     /// <returns>Types with the given attribute defined, together with their respective attributes.</returns>
-    public static IEnumerable<(Type type, Attribute[] attributes)> GetTypesAndAttributes(this Assembly assembly, Type attrType, bool allowAbstract = false) {
+    public static IEnumerable<(Type Type, Attribute[] Attributes)> GetTypesAndAttributes(this Assembly assembly, Type attrType, bool allowAbstract = false) {
         foreach (var type in assembly.GetTypes()) {
             var attributes = type.GetCustomAttributes(attrType, true)
                 .Select(attribute => (Attribute)attribute);
@@ -85,7 +85,7 @@ public static class AssemblyExtensions {
     /// <param name="assembly">Assembly to search.</param>
     /// <param name="allowAbstract">Allow abstract types, false by default</param>
     /// <returns>Types with the given attribute defined.</returns>
-    public static IEnumerable<(Type type, T[] attributes)> GetTypesAndAttributes<T>(this Assembly assembly, bool allowAbstract = false) where T : Attribute {
+    public static IEnumerable<(Type Type, T[] Attributes)> GetTypesAndAttributes<T>(this Assembly assembly, bool allowAbstract = false) where T : Attribute {
         var attrType = typeof(T);
         foreach (Type type in assembly.GetTypes()) {
             var attributes = type.GetCustomAttributes(attrType, true)
